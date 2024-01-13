@@ -8,6 +8,8 @@ import { createTRPCRouter } from "~/server/api/trpc";
  */
 export const appRouter = createTRPCRouter({
   post: postRouter,
+  // todo add websocket server to communicate game changes & updates
+  // https://trpc.io/docs/subscriptions
 });
 
 // export type definition of API

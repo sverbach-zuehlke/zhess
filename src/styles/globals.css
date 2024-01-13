@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --font-sans: Arial;
+}
+
+html,
+body,
+div#__next {
+  height: 100%;
+  min-height: 100%;
+}
+
+@layer base {
+  .bg-tile-light {
+    @apply bg-primary;
+  }
+
+  .bg-tile-dark {
+    @apply bg-secondary;
+  }
+
+  .text-tile-light {
+    @apply text-primary-content;
+  }
+
+  .text-tile-dark {
+    @apply text-secondary-content;
+  }
+}
